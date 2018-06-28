@@ -26,7 +26,7 @@ void limpar () {
 }
 
 //Lê as entradas dos usuários
-void receberEntradas (char f1[], char f2[]) {
+void receberEntradas (char *f1, char *f2) {
     printf("Digite a frase: ");
     setbuf (stdin, NULL); //Apaga o buffer da memória para evitar erros de leitura indesejada
     fgets (f1, MAX, stdin);
@@ -36,7 +36,7 @@ void receberEntradas (char f1[], char f2[]) {
 }
 
 //Retorna a quantidade de caracteres da string
-int tamanhoString (char f[]) {
+int tamanhoString (char *f) {
     int i = 0;
 
     //Percorre todo o array até que encontre o '\0'
@@ -47,7 +47,7 @@ int tamanhoString (char f[]) {
 }
 
 //Verifica se uma string inicia com as mesmas letras de uma segunda string
-int comecaCom (char f1[], char f2[], int t2) {
+int comecaCom (char *f1, char *f2, int t2) {
     int continua = 1, i = 0;
 
     //Continua no loop até que ele verifique que a primeira string não começa com a segunda
@@ -63,7 +63,7 @@ int comecaCom (char f1[], char f2[], int t2) {
 }
 
 //Verifica se uma string termina com as mesmas letras de uma segunda string
-int terminaCom (char f1[], char f2[], int t1, int t2) {
+int terminaCom (char *f1, char *f2, int t1, int t2) {
     int continua = 1, i = (t1-1), j = (t2-1);
     int lim = (t1-t2-1);
 
@@ -81,7 +81,7 @@ int terminaCom (char f1[], char f2[], int t1, int t2) {
 }
 
 //Verifica se uma string contém uma segunda string
-int subPalavra (char f1[], char f2[], int t1, int t2) {
+int subPalavra (char *f1, char *f2, int t1, int t2) {
     int i = 0, j = 0, k = 0;
     int continua = 0;
 
@@ -112,7 +112,7 @@ int subPalavra (char f1[], char f2[], int t1, int t2) {
 }
 
 //Exibe um resultado personalizado para cada opção escolhida no menu
-void exibirResultado (int res, int opc, char f1[], char f2[]) {
+void exibirResultado (int res, int opc, char *f1, char *f2) {
     char opc2;
 
     //Verifica qual opção o usuário havia escolhido no início

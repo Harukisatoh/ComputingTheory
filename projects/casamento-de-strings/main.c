@@ -16,38 +16,32 @@ int main () {
 
     switch (op) {
         case 1:
-            //As funções passam como parâmetro o primeiro elemento dos arrays de caracteres
-
             //Lê as entradas do usuário
-            receberEntradas (&frase1[0], &frase2[0]);
+            receberEntradas (frase1, frase2);
             //Chama função desejada e armazena o resultado em uma variável
-            resultado = comecaCom (&frase1[0], &frase2[0], tamanhoString (&frase2[0]));
+            resultado = comecaCom (frase1, frase2, tamanhoString (frase2));
             //Exibe o resultado
-            exibirResultado (resultado, op, &frase1[0], &frase2[0]);
+            exibirResultado (resultado, op, frase1, frase2);
             //Retorna ao main
             main ();
         break;
         case 2:
-            //As funções passam como parâmetro o primeiro elemento dos arrays de caracteres
-
             //Lê as entradas do usuário
-            receberEntradas (&frase1[0], &frase2[0]);
+            receberEntradas (frase1, frase2);
             //Chama função desejada e armazena o resultado em uma variável
-            resultado = terminaCom (&frase1[0], &frase2[0], tamanhoString (&frase1[0]), tamanhoString (&frase2[0]));
+            resultado = terminaCom (frase1, frase2, tamanhoString (frase1), tamanhoString (frase2));
             //Exibe o resultado
-            exibirResultado (resultado, op, &frase1[0], &frase2[0]);
+            exibirResultado (resultado, op, frase1, frase2);
             //Retorna ao main
             main ();
         break;
         case 3:
-            //As funções passam como parâmetro o primeiro elemento dos arrays de caracteres
-
             //Lê as entradas do usuário
-            receberEntradas (&frase1[0], &frase2[0]);
+            receberEntradas (frase1, frase2);
             //Chama função desejada e armazena o resultado em uma variável
-            resultado = subPalavra (&frase1[0], &frase2[0], tamanhoString (&frase1[0]), tamanhoString (&frase2[0]));
+            resultado = subPalavra (frase1, frase2, tamanhoString (frase1), tamanhoString (frase2));
             //Exibe o resultado
-            exibirResultado (resultado, op, &frase1[0], &frase2[0]);
+            exibirResultado (resultado, op, frase1, frase2);
             //Retorna ao main
             main ();
         break;
