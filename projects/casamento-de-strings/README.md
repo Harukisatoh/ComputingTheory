@@ -10,9 +10,9 @@ O programa contém um menu onde irá se escolher a função desejada, após isso
 
 O programa contém 3 funções, cada uma implementada apenas com o auxílio de classes básicas da linguagem, são elas:
 
-* Prefixo - Similar à função [startsWith](https://docs.oracle.com/javase/10/docs/api/java/lang/String.html#startsWith) da linguagem Java
-* Sufixo - Similar à função [endsWith](https://docs.oracle.com/javase/10/docs/api/java/lang/String.html#endsWith) da linguagem Java
-* Sub-palavra - Similar à função [contains](https://docs.oracle.com/javase/10/docs/api/java/lang/String.html#contains) da linguagem Java
+* Prefixo - Similar à função [startsWith](https://docs.oracle.com/javase/10/docs/api/java/lang/String.html#startsWith(java.lang.String)) da linguagem Java
+* Sufixo - Similar à função [endsWith](https://docs.oracle.com/javase/10/docs/api/java/lang/String.html#endsWith(java.lang.String)) da linguagem Java
+* Sub-palavra - Similar à função [contains](https://docs.oracle.com/javase/10/docs/api/java/lang/String.html#contains(java.lang.CharSequence)) da linguagem Java
 
 ## Arquivos
 
