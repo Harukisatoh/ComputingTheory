@@ -21,7 +21,7 @@ int main () {
             //Chama função desejada e armazena o resultado em uma variável
             resultado = comecaCom (frase1, frase2, tamanhoString (frase2));
             //Exibe o resultado
-            exibirResultado (resultado, op, frase1, frase2);
+            exibirResultado (resultado, op);
             //Retorna ao main
             main ();
         break;
@@ -31,7 +31,7 @@ int main () {
             //Chama função desejada e armazena o resultado em uma variável
             resultado = terminaCom (frase1, frase2, tamanhoString (frase1), tamanhoString (frase2));
             //Exibe o resultado
-            exibirResultado (resultado, op, frase1, frase2);
+            exibirResultado (resultado, op);
             //Retorna ao main
             main ();
         break;
@@ -41,7 +41,7 @@ int main () {
             //Chama função desejada e armazena o resultado em uma variável
             resultado = subPalavra (frase1, frase2, tamanhoString (frase1), tamanhoString (frase2));
             //Exibe o resultado
-            exibirResultado (resultado, op, frase1, frase2);
+            exibirResultado (resultado, op);
             //Retorna ao main
             main ();
         break;

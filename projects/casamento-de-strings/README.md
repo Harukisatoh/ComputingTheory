@@ -2,17 +2,49 @@
 
 Este trabalho foi implementado utilizando a Linguagem C, e têm o objetivo de fixar os conteúdos de Autômatos Finitos da disciplina de Teoria da Computação
 
-## Como funciona?
-
-O programa contém um menu onde irá se escolher a função desejada, após isso o usuário deverá digitar duas palavras, uma para ser analisada, e a outra para verificar se é um prefixo, um sufixo ou uma sub-palavra da primeira
-
 ## Funções
 
 O programa contém 3 funções, cada uma implementada apenas com o auxílio de classes básicas da linguagem, são elas:
 
-* Prefixo - Similar à função [startsWith](https://docs.oracle.com/javase/10/docs/api/java/lang/String.html#startsWith(java.lang.String)) da linguagem Java
-* Sufixo - Similar à função [endsWith](https://docs.oracle.com/javase/10/docs/api/java/lang/String.html#endsWith(java.lang.String)) da linguagem Java
-* Sub-palavra - Similar à função [contains](https://docs.oracle.com/javase/10/docs/api/java/lang/String.html#contains(java.lang.CharSequence)) da linguagem Java
+* [Prefixo](https://github.com/Harukisatoh/ComputingTheory/tree/master/projects/casamento-de-strings#user-content-função-de-prefixo)
+* [Sufixo](https://github.com/Harukisatoh/ComputingTheory/tree/master/projects/casamento-de-strings#user-content-função-de-sufixo)
+* [Sub-palavra](https://github.com/Harukisatoh/ComputingTheory/tree/master/projects/casamento-de-strings#user-content-função-de-sub-palavra)
+
+## Como funciona?
+
+O programa contém um menu onde irá se escolher a função desejada, após isso o usuário deverá digitar duas palavras, uma para ser analisada, e a outra para verificar se é um prefixo, um sufixo ou uma sub-palavra da primeira, neste tópico explicaremos como funciona a lógica de cada uma delas
+
+### Função de prefixo
+
+É uma função similar à função [startsWith](https://docs.oracle.com/javase/10/docs/api/java/lang/String.html#startsWith(java.lang.String)) da linguagem Java. Seu objetivo é verificar se uma string inicia-se com uma segunda string.
+
+* O usuário passa as duas strings
+* O programa calcula o tamanho da segunda string e armazena em uma variável
+* A função entra em um loop percorrendo cada caractere das duas strings, até que ele verifique que a primeira string não inicia-se com a segunda
+    * A cada execução desse loop é verificado(através de um if) se a letra da primeira string é igual a letra da segunda string, caso não seja, o loop é interrompido e a função retorna 0
+* Se for verificado que todas as letras da segunda string são iguais as primeiras letras da primeira string, então a função retorna 1
+
+### Função de sufixo
+
+É uma função similar à função [endsWith](https://docs.oracle.com/javase/10/docs/api/java/lang/String.html#endsWith(java.lang.String)) da linguagem Java. Seu objetivo é verificar se uma string termina com uma segunda string.
+
+* O usuário passa as duas strings
+* O programa calcula o tamanho das duas strings e armazena em variáveis
+* A função entra em um loop percorrendo cada caractere das duas strings de forma inversa à da função de prefixo, ou seja, percorre as strings de trás pra frente, até que ele verifique que a primeira string não termina com a segunda
+    * A cada execução desse loop é verificado(através de um if) se a letra da primeira string é igual a letra da segunda string, caso não seja, o loop é interrompido e a função retorna 0
+* Se for verificado que todas as letras da segunda string são iguais as últimas letras da primeira string, então a função retorna 1
+
+### Função de sub-palavra
+
+É uma função similar à função [contains](https://docs.oracle.com/javase/10/docs/api/java/lang/String.html#contains(java.lang.CharSequence)) da linguagem Java. Seu objetivo é verificar se uma string contém uma segunda string.
+
+* O usuário passa as duas strings
+* O programa calcula o tamanho das duas strings e armazena em variáveis
+* A função entra em um loop que percorre todas as letras da primeira string, até que ele verifique que a primeira string não contem a segunda
+    * A cada execução desse loop é verificado(através de um if) se a letra da primeira string é igual a letra da segunda string, caso seja, a função entrará em outro loop
+        * Este loop percorrerá as duas strings (com a primeira string começando a percorrer do caractere em que ela está), até que chegue ao fim da segunda string
+            * A cada execução desse loop novamente é verificado(através de um if) se a letra da primeira string é igual a letra da segunda string, caso não seja, o segundo loop é interrompido, e o primeiro loop continua sua execução
+* Se, ao final do segundo loop, for verificado que a primeira string contém a segunda string, então a função retorna 1, porém se mesmo após o primeiro loop terminar e não for encontrado a segunda string dentro da primeira, então a função retorna 0
 
 ## Arquivos
 

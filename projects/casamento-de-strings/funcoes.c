@@ -112,7 +112,7 @@ int subPalavra (char *f1, char *f2, int t1, int t2) {
 }
 
 //Exibe um resultado personalizado para cada opção escolhida no menu
-void exibirResultado (int res, int opc, char *f1, char *f2) {
+void exibirResultado (int res, int opc) {
     char opc2;
 
     //Verifica qual opção o usuário havia escolhido no início
