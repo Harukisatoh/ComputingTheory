@@ -2,13 +2,29 @@
 
 Este trabalho foi implementado utilizando a Linguagem C, e têm o objetivo de fixar os conteúdos de Autômatos Finitos da disciplina de Teoria da Computação
 
-## Funções
+## Estrutura do programa
 
-O programa contém 3 funções, cada uma implementada apenas com o auxílio de classes básicas da linguagem, são elas:
+Este tópico demonstra como o programa foi dividido, de forma a organizá-lo
+
+### Arquivos
+
+O programa é divido em três arquivos, sendo eles:
+
+* main.c - O arquivo principal
+* funcoes.c - O arquivo onde todas as implementações e funções do programa estão escritas
+* prototipos.h - O arquivo onde estão todas as bibliotecas, protótipos de função e definições de constantes
+
+É necessário os três arquivos para que o programa funcione
+
+### Funções
+
+O programa contém 3 funções principais, cada uma implementada apenas com o auxílio de classes básicas da linguagem, são elas:
 
 * [Prefixo](https://github.com/Harukisatoh/ComputingTheory/tree/master/projects/casamento-de-strings#user-content-função-de-prefixo)
 * [Sufixo](https://github.com/Harukisatoh/ComputingTheory/tree/master/projects/casamento-de-strings#user-content-função-de-sufixo)
 * [Sub-palavra](https://github.com/Harukisatoh/ComputingTheory/tree/master/projects/casamento-de-strings#user-content-função-de-sub-palavra)
+
+--------------------------------------------------------------------------------
 
 ## Como funciona?
 
@@ -46,15 +62,7 @@ O programa contém um menu onde irá se escolher a função desejada, após isso
             * A cada execução desse loop novamente é verificado(através de um if) se a letra da primeira string é igual a letra da segunda string, caso não seja, o segundo loop é interrompido, e o primeiro loop continua sua execução
 * Se, ao final do segundo loop, for verificado que a primeira string contém a segunda string, então a função retorna 1, porém se mesmo após o primeiro loop terminar e não for encontrado a segunda string dentro da primeira, então a função retorna 0
 
-## Arquivos
-
-O programa é divido em três arquivos, sendo eles:
-
-* main.c - O arquivo principal
-* funcoes.c - O arquivo onde todas as implementações e funções do programa estão escritas
-* prototipos.h - O arquivo onde estão todas as bibliotecas, protótipos de função e definições de constantes
-
-É necessário os três arquivos para que o programa funcione
+--------------------------------------------------------------------------------
 
 ## Como executá-lo?
 
@@ -81,6 +89,8 @@ gcc main.c -o meuPrograma
 ```
 
 No lugar de "meuPrograma" você poderá dar o nome que quiser para o executável, após isso o executável foi criado
+
+--------------------------------------------------------------------------------
 
 ## Autor
 
