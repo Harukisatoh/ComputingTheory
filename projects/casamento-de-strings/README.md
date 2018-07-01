@@ -94,4 +94,4 @@ No lugar de "meuPrograma" você poderá dar o nome que quiser para o executável
 
 ## Autor
 
-* [Gabriel Haruki Gomes Satô](https://github.com/Harukisatoh) - Student of the Computer Science course at the Universidade Estadual do Norte do Paraná (UENP).
+* [Gabriel Haruki Gomes Satô](https://github.com/Harukisatoh) - Estudante do curso de Ciência da Computação na Universidade Estadual do Norte do Paraná (UENP).
